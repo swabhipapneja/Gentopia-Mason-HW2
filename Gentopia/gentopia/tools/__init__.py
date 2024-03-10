@@ -1,5 +1,7 @@
 from .basetool import BaseTool
 from .google_search import GoogleSearch
+from .pdf_reader import PDFReader
+from .translation_tool import TranslationTool
 from .google_scholar import *
 from .calculator import Calculator
 from .wikipedia import Wikipedia
@@ -23,6 +25,7 @@ def load_tools(name: str) -> BaseTool:
         "write_file": WriteFile,
         "read_file": ReadFile,
         "google_search": GoogleSearch,
+        "pdf_reader": PDFReader,
         "text_to_speech": TTS,
         "image_caption": ImageCaption,
         "text_to_image": TextToImage,
@@ -43,6 +46,7 @@ def load_tools(name: str) -> BaseTool:
         "search_single_paper": SearchSinglePaper,
         "search_related_paper": SearchRelatedPaper,
         "search_cite_paper": SearchCitePaper,
+        "translation_tool": TranslationTool
     }
     if name not in name2tool:
         raise NotImplementedError
