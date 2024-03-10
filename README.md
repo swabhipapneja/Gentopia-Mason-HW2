@@ -1,4 +1,4 @@
-# Gentopia-Mason-hw2
+# Gentopia-Mason
 
 **IMPORTANT NOTICE: This code repository was adapted from [Gentopia.AI](https://github.com/Gentopia-AI) to support Mason Activities.** 
 
@@ -65,3 +65,34 @@ Sometimes an agent can upset you. To wipe it out completely,
 ./delete_agent <your_agent_name> 
 ```
 
+## PDF Reader
+Make sure to install PyPDF2
+pip install PyPDF2
+
+sample prompts:
+1. read a pdf article on global warming
+2. read a pdf on global warming and summarize it
+
+## Bonus Agent - Translation Tool
+I built an agent that is a language translation tool. This tool will take input prompt that mentions a language it
+has to be converted to. I used the HuggingFace Transformer Library to access a pretrained translation model. The
+input prompt is tokenized and then processed by the translation model to result in the translated tokens.
+
+Make sure transformers library is installed, otherwise use the following command:
+pip install transformers
+
+Here are few examples of prompts and the responses from the agent:
+1. English to French
+Prompt: we eat apples in french
+my bonus agent: nous mangeons des pommes
+2. English to Spanish
+Prompt: translate how are you to Spanish
+my bonus agent: I have translated ”how are you” to Spanish, which is ”¿C ́omo est ́as?”. If you have any
+more translation requests or need assistance with anything else, feel free to let me know!
+3. English to German
+Prompt: translate see you tomorrow in german
+my bonus agent: ”See you tomorrow” translated to German is ”Wir sehen uns morgen.”
+
+## Student Name - Swabhi Papneja
+## G No. - G01441441
+## NetID - spapneja
