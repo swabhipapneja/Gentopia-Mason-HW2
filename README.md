@@ -1,4 +1,4 @@
-# Gentopia-Mason
+# Gentopia-Mason-hw2
 
 **IMPORTANT NOTICE: This code repository was adapted from [Gentopia.AI](https://github.com/Gentopia-AI) to support Mason Activities.** 
 
